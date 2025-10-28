@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <referenceContainer name="header.container">
+        <block name="free.shipping.banner" template="Denal05_MacademyUIComponentsInM2FreeShippingPromo::free-shipping-banner.phtml" before="-" />
+    </referenceContainer>
+</layout>
