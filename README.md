@@ -26,3 +26,7 @@ Since the text needs to dynamically react to the cart subtotal changes, the modu
 ## Time Estimates
 - For experienced developers, this task can be estimated as a medium ticket, taking between 3 and 5 hours to complete. This includes researching how to get the cart subtotal and handling any intricacies involved with the display of the text.
 - For beginning or intermediate developers, this task can be estimated as a large item, taking more time for research and learning the necessary steps.
+
+## Style a block template - Updating the source file  
+Anytime you make changes within your less file, you need to rerun the bin/magento setup:upgrade command.  
+
