@@ -30,3 +30,10 @@ Since the text needs to dynamically react to the cart subtotal changes, the modu
 ## Style a block template - Updating the source file  
 Anytime you make changes within your less file, you need to rerun the bin/magento setup:upgrade command.  
 
+## uiClass vs uiElement vs uiCollection vs uiComponent  
+All of these files reside in the following folder:  
+'''
+vendor/magento/module-ui/view/base/web/js/lib/core
+'''
+... However, uiElements cannot have child components, which limits their functionality compared to uiCollection.  
+
