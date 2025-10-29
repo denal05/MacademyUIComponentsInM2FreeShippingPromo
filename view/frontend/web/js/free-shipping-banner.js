@@ -11,4 +11,4 @@ define([
 			console.log('Free Shipping Banner UI component has been loaded via Component.extend({ initialize... })');
 		}
 	});
-})
+});
