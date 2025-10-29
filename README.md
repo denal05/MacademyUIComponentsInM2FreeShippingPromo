@@ -37,3 +37,6 @@ vendor/magento/module-ui/view/base/web/js/lib/core
 ```
 ... However, uiElements cannot have child components, which limits their functionality compared to uiCollection.  
 
+## Issues  
+- At the moment, the console.log() message from free-shipping-banner.js doesn't appear in the console log.  
+
