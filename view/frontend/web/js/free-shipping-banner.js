@@ -5,7 +5,10 @@ define([
 ) {
 	'use strict';
 
-	console.log('Free Shipping Banner UI component has been loaded.');
-
-	return Component;
+	return Component.extend({
+		initialize: function() {
+			this._super();
+			console.log('Free Shipping Banner UI component has been loaded via Component.extend({ initialize... })');
+		}
+	});
 })
