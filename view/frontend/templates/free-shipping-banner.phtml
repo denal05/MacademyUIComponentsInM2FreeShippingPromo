@@ -2,16 +2,15 @@
 /* @var $block Magento\Framework\View\Element\Template */
 ?>
 
-
-<div id="free-shipping-banner">
-    Free Shipping Banner
+<div id="free-shipping-banner" data-bind="scope: 'free-shipping-banner'">
+    <div data-bind="text: message"></div>
 </div>
 
 <script type="x-magento-init">
-	{
-		"#free-shipping-banner": {
-			"Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
-		}
-	}
+    {
+        "#free-shipping-banner": {
+            "Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
+        }
+    }
 </script>
 
