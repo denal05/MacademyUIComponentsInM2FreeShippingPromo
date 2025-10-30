@@ -38,5 +38,5 @@ vendor/magento/module-ui/view/base/web/js/lib/core
 ... However, uiElements cannot have child components, which limits their functionality compared to uiCollection.  
 
 ## Issues  
-- At the moment, the console.log() message from free-shipping-banner.js doesn't appear in the console log.  
+- It seems this custom module doesn't have JavaScript or Knockout set up properly, because neither the console.log messages appear in the console, nor does div data-bind nor ko template: getTemplate() work.
 
