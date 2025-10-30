@@ -7,7 +7,8 @@ define([
 
 	return Component.extend({
 		defaults: {
-			message: 'Free Shipping Message - defaults property - Knockout'
+			message: 'Free Shipping Message - defaults property - Knockout template',
+			template: 'Denal05_MacademyUIComponentsInM2FreeShippingPromo/free-shipping-banner'
 		},
 		initialize: function() {
 			this._super();
