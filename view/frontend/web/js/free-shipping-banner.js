@@ -6,9 +6,12 @@ define([
 	'use strict';
 
 	return Component.extend({
+		defaults: {
+			message: 'Free Shipping Message - defaults property - Knockout'
+		},
 		initialize: function() {
 			this._super();
-			console.log('Free Shipping Banner UI component has been loaded via Component.extend({ initialize... })');
+			console.log(this.message);
 		}
 	});
 });
