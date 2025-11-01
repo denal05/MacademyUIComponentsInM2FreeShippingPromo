@@ -1,11 +1,13 @@
 define([
 	'uiComponent',
 	'ko',
-	'Magento_Customer/js/customer-data'
+	'Magento_Customer/js/customer-data',
+	'underscore'
 ], function(
 	Component,
 	ko,
-	customerData
+	customerData,
+	_
 ) {
 	'use strict';
 
@@ -23,7 +25,11 @@ define([
 			var self = this;
 			var cart = customerData.get('cart');
 			customerData.getInitCustomerData().done(function() {
-				self.subtotal = parseFloat(cart().subtotalAmount);
+				if(!_.isEmpty(cart()) &&
+					!_.isUndefined(cart().subtotalAmount)
+				) {
+					self.subtotal = parseFloat(cart().subtotalAmount);
+				}
 			});
 			
 			// simulate the user updating the value
