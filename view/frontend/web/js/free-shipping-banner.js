@@ -13,10 +13,11 @@ define([
 
 	return Component.extend({
 		defaults: {
-				message: 'Free Shipping Message Placeholder - UI Component defaults property - Knockout template',
+				message: '${ $.messageDefault }',
 				subtotal: 0.00,
 				template: 'Denal05_MacademyUIComponentsInM2FreeShippingPromo/free-shipping-banner',
 				tracks: {
+					message: true,
 					subtotal: true
 				}
 		},
