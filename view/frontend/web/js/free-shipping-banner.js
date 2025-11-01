@@ -1,29 +1,40 @@
 define([
 	'uiComponent',
-	'ko'
+	'ko',
+	'Magento_Customer/js/customer-data'
 ], function(
 	Component,
-	ko
+	ko,
+	customerData
 ) {
 	'use strict';
 
 	return Component.extend({
 		defaults: {
-    message: 'Free Shipping Message - defaults property - Knockout template',
-    subtotal: ko.observable(33.00),
-    template: 'Denal05_MacademyUIComponentsInM2FreeShippingPromo/free-shipping-banner'
+				message: 'Free Shipping Message Placeholder - UI Component defaults property - Knockout template',
+				subtotal: 0.00,
+				template: 'Denal05_MacademyUIComponentsInM2FreeShippingPromo/free-shipping-banner',
+				tracks: {
+					subtotal: true
+				}
 		},
 		initialize: function() {
 			this._super();
 			var self = this;
-			console.log(this.message);
-		
-		 window.setTimeout( function () {
+			var cart = customerData.get('cart');
+			customerData.getInitCustomerData().done(function() {
+				self.subtotal = parseFloat(cart().subtotalAmount);
+			});
+			
+			// simulate the user updating the value
+			/*
+			window.setTimeout( function () {
 				self.subtotal(36.00);
 			}, 2000);
+			*/
 		},
 		formatCurrency: function(value) {
-    return '$' + value().toFixed(2);
-		} b
+			return '$' + value().toFixed(2);
+		}
 	});
 });
