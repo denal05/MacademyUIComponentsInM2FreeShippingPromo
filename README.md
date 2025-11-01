@@ -35,7 +35,10 @@ All of these files reside in the following folder:
 ```
 vendor/magento/module-ui/view/base/web/js/lib/core
 ```
-... However, uiElements cannot have child components, which limits their functionality compared to uiCollection.  
+… However, uiElements cannot have child components, which limits their functionality compared to uiCollection.  
+
+## Binding data from UI Components to KnockoutJS
+… UI components are often referred to as ViewModels.
 
 ## Issues  
 - No known issues.
