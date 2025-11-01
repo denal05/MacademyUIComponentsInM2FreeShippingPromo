@@ -42,6 +42,7 @@ vendor/magento/module-ui/view/base/web/js/lib/core
 
 ## Create a KnockoutJS template
 … phtml should really just be used for component initialization.  
+Create a directory named `view/web/template`. Note that the naming of this is 'template', and not 'templates' like our phtml files, the JavaScript rendering uses this different name, so it’s just something to be aware of.
 
 ## Issues  
 - No known issues.
