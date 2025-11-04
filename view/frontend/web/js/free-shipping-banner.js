@@ -44,7 +44,7 @@ define([
 			self.message = ko.computed( function () {
 				// if subtotal == 0, return messageDefault
 				if (_.isUndefined(self.subtotal) || self.subtotal === 0) {
-					return self.messageDefault;
+					return self.messageDefault.replace('{{freeShippingThreshold}}', self.freeShippingThreshold);
 				}
 
 				// if 0 > subtotal < 100, return messageItemsInCart
