@@ -20,6 +20,7 @@
                             </item>
                         </item>
                     </argument>
+                    <argument name="shipping_config_view_model">Denal05\MacademyUIComponentsInM2FreeShippingPromo\ViewModel\ShippingConfig</argument>
                 </arguments>
             </block>
         </referenceContainer>
