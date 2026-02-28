@@ -1,6 +1,7 @@
 # MacademyUIComponentsInM2FreeShippingPromo
-A Magento 2 module built as an exercise for the M.academy "UI Components in Magento 2" course by Mark Shust
-
+A Magento 2 module built as an exercise for the M.academy "UI Components in Magento 2" course by Mark Shust  
+UI Components are the JavaScript-side ViewModel in Magento.  
+  
 ## User Story
 As a visitor, I’d like to know how many dollars to add to my cart so I know when my shopping cart total qualifies for the free shipping promotion.
 
