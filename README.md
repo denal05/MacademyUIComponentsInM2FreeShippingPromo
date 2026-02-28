@@ -46,8 +46,9 @@ vendor/magento/module-ui/view/base/web/js/lib/core
 Create a directory named `view/frontend/web/template`. Note that the naming of this is 'template', and not 'templates' like our phtml files, the JavaScript rendering uses this different name, so it’s just something to be aware of.
 
 ## Understand Knockout observables, tracks & reactivity
-Whenever we make a property observable, that property becomes a function. We can no longer assign values with an equal sign, such as self.subtotal = 35.00; we assign values with a call to a function, so we will wrap this value within a function call, i.e., within parentheses as in self.subtotal(35.00);  
-We also have to do the same within our formatCurrency function; we have to update value.toFixed(2) to a function call, as in value().toFixed(2); If we call the function without parameters, as in value.toFixed(2), it returns the original value.  
+If we make the subtotal observable, as in `subtotal: ko.observable( initialValue: 33.00 )` ...  
+Whenever we make a property observable, that property becomes a function. We can no longer assign values with an equal sign, such as `self.subtotal = 35.00;` we assign values with a call to a function, so we will wrap this value within a function call, i.e., within parentheses, as in `self.subtotal(35.00);`  
+We also have to do the same within our formatCurrency function; we have to update `value.toFixed(2)` to a function call, as in `value().toFixed(2);` If we call the function without parameters, as in `value.toFixed(2)`, it returns the original value.  
 
 ## Issues  
 - No known issues.
